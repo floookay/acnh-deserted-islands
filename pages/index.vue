@@ -1,46 +1,79 @@
 <template>
   <section class="section">
-    <div class="columns is-mobile">
-      <card title="Free" icon="github-circle">
-        Open source on
-        <a href="https://github.com/buefy/buefy">
-          GitHub
-        </a>
-      </card>
-
-      <card title="Responsive" icon="cellphone-link">
-        <b class="has-text-grey">
-          Every
-        </b>
-        component is responsive
-      </card>
-
-      <card title="Modern" icon="alert-decagram">
-        Built with
-        <a href="https://vuejs.org/">
-          Vue.js
-        </a>
-        and
-        <a href="http://bulma.io/">
-          Bulma
-        </a>
-      </card>
-
-      <card title="Lightweight" icon="arrange-bring-to-front">
-        No other internal dependency
-      </card>
-    </div>
+    <b-table :data="data" :columns="columns"></b-table>
   </section>
 </template>
 
 <script>
-import Card from '~/components/Card'
-
 export default {
   name: 'HomePage',
-
-  components: {
-    Card
+  data() {
+    const columns = [
+      {
+        field: 'island',
+        label: 'Island',
+        sortable: true
+      },
+      {
+        field: 'visits',
+        label: 'Number of Visits',
+        numeric: true,
+        sortable: true
+      },
+      {
+        field: 'fossil',
+        label: 'Found Fossils',
+        numeric: true,
+        sortable: true
+      },
+      {
+        field: 'fossil_per',
+        label: 'Fossils per Visit',
+        numeric: true,
+        sortable: true
+      },
+      {
+        field: 'bottle',
+        label: 'Found Bottles',
+        numeric: true,
+        sortable: true
+      },
+      {
+        field: 'bottle_per',
+        label: 'Bottles per Visit',
+        numeric: true,
+        sortable: true
+      }
+    ]
+    return {
+      data: [
+        {
+          island: 'Island 0',
+          visits: 14,
+          fossil: 3,
+          fossil_per: 0.1,
+          bottle: 3,
+          bottle_per: 0.4
+        },
+        {
+          island: 'Island 1',
+          visits: 14,
+          fossil: 3,
+          fossil_per: 0.1,
+          bottle: 3,
+          bottle_per: 0.4
+        },
+        {
+          island: 'Island 2',
+          visits: 14,
+          fossil: 3,
+          fossil_per: 0.1,
+          bottle: 3,
+          bottle_per: 0.4
+        }
+      ],
+      columns
+    }
   }
 }
 </script>

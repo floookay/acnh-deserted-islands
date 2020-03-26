@@ -5,7 +5,7 @@
       role="navigation"
       aria-label="main navigation"
     >
-      <div class="navbar-brand">
+      <!--<div class="navbar-brand">
         <a class="navbar-item" href="/">
           <img src="~assets/buefy.png" alt="Buefy" height="28" />
         </a>
@@ -15,7 +15,7 @@
           <span />
           <span />
         </div>
-      </div>
+      </div>-->
     </nav>
 
     <section class="main-content columns">
@@ -45,14 +45,14 @@ export default {
     return {
       items: [
         {
-          title: 'Home',
+          title: 'Statistics',
           icon: 'home',
           to: { name: 'index' }
         },
         {
-          title: 'Inspire',
+          title: 'Islands',
           icon: 'lightbulb',
-          to: { name: 'inspire' }
+          to: { name: 'islands' }
         }
       ]
     }
