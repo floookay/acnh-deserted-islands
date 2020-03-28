@@ -1,0 +1,83 @@
+[
+    {
+        "name":"tarantula island",
+        "pic":"tarantula.jpg",
+        "fruits":"native",
+        "flowers": {
+            "type":"native",
+            "color":"normal"
+        }
+    },
+    {
+        "name":"bamboo island",
+        "pic":"bamboo.jpg",
+        "fruits":"foreign",
+        "flowers": {
+            "type":"native",
+            "color":"normal"
+        }
+    },
+    {
+        "name":"lambda pond",
+        "pic":"tarantula.jpg",
+        "fruits":"native",
+        "flowers": {
+            "type":"native",
+            "color":"normal"
+        }
+    },
+    {
+        "name":"waterfall flood",
+        "pic":"4x_waterfall.jpg",
+        "fruits":"native",
+        "flowers": {
+            "type":"native",
+            "color":"normal"
+        }
+    },
+    {
+        "name":"waterfall left",
+        "pic":"leftwaterfall.jpg",
+        "fruits":"foreign",
+        "flowers": {
+            "type":"foreign",
+            "color":"normal"
+        }
+    },
+    {
+        "name":"fossil river",
+        "pic":"fossil_river.jpg",
+        "fruits":"native",
+        "flowers": {
+            "type":"native",
+            "color":"normal"
+        }
+    },
+    {
+        "name":"large waterfall",
+        "pic":"large waterfall.jpg",
+        "fruits":"native",
+        "flowers": {
+            "type":"foreign",
+            "color":"normal"
+        }
+    },
+    {
+        "name":"mountain island",
+        "pic":"4xwaterfall.jpg",
+        "fruits":"native",
+        "flowers": {
+            "type":"native",
+            "color":"normal"
+        }
+    },
+    {
+        "name":"waterfall pond",
+        "pic":"waterfall_pond.jpg",
+        "fruits":"native",
+        "flowers": {
+            "type":"native",
+            "color":"normal"
+        }
+    }
+]
