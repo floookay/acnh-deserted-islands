@@ -1,5 +1,8 @@
 export default {
   mode: 'universal',
+  router: {
+    base: '/acnh-deserted-islands/'
+  },
   /*
    ** Headers of the page
    */
