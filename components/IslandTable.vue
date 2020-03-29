@@ -34,11 +34,16 @@
                     label="Fossils per Island"
                     sortable
                 >
-                    {{
-                        Math.round(
-                            (props.row.fossils / props.row.visits) * 100
-                        ) + '%'
-                    }}
+                    <div v-if="props.row.visits === 0">
+                        -
+                    </div>
+                    <div v-else>
+                        {{
+                            Math.round(
+                                (props.row.fossils / props.row.visits) * 100
+                            ) + '%'
+                        }}
+                    </div>
                 </b-table-column>
 
                 <b-table-column field="bottles" label="Found Bottles" sortable>
@@ -50,11 +55,16 @@
                     label="Bottles per Island"
                     sortable
                 >
-                    {{
-                        Math.round(
-                            (props.row.bottles / props.row.visits) * 100
-                        ) + '%'
-                    }}
+                    <div v-if="props.row.visits === 0">
+                        -
+                    </div>
+                    <div v-else>
+                        {{
+                            Math.round(
+                                (props.row.bottles / props.row.visits) * 100
+                            ) + '%'
+                        }}
+                    </div>
                 </b-table-column>
 
                 <b-table-column
@@ -62,7 +72,7 @@
                     label="Discovered by Players"
                     sortable
                 >
-                    {{ props.row.players }}
+                    {{ props.row.users }}
                 </b-table-column>
             </template>
 
@@ -93,74 +103,78 @@
 
 <script>
 import islands from '~/assets/islands.json'
+const userData = {}
+const totalData = {}
 
-// function getFileNameOnly(filePath) {
-//     return filePath
-//         .split('/')
-//         .pop()
-//         .split('.')
-//         .shift()
-// }
-// function loadVisits(selection) {
-//     const user = selection || ''
-//     const reg = new RegExp(user + '.json$')
-//     // const requireContext = require.context('./visits', false, reg)
-//     // const data = {}
-//     // requireContext.keys().forEach((key) => {
-//     //    const obj = requireContext(key)
-//     //     const simpleKey = getFileNameOnly(key)
-//     //     data[simpleKey] = obj
-//     // })
-//     // return data
-// }
+// import all data from users
+const requireComponent = require.context(
+    '../assets/users/',
+    false,
+    /\w+\.json$/
+)
+requireComponent.keys().forEach((fileName) => {
+    const user = fileName
+        .split('/')
+        .pop()
+        .replace(/\.\w+$/, '')
+    if (user === '_template') return 0
+    userData[user] = requireComponent(fileName)
+})
+
+// prepare totalData with islands
+islands.forEach((island) => {
+    island.visits = 0
+    island.fossils = 0
+    island.bottles = 0
+    island.users = 0
+    totalData[island.island] = island
+})
+
+// populate totalData
+for (const user in userData) {
+    if (Object.prototype.hasOwnProperty.call(userData, user)) {
+        const userIslands = userData[user]
+        for (const islandName in userIslands) {
+            if (Object.prototype.hasOwnProperty.call(userIslands, islandName)) {
+                const island = userIslands[islandName]
+                if (
+                    Object.prototype.hasOwnProperty.call(totalData, islandName)
+                ) {
+                    totalData[islandName].visits += island.visits
+                    totalData[islandName].fossils += island.fossils
+                    totalData[islandName].bottles += island.bottles
+                    totalData[islandName].users += 1
+                } else {
+                    // user visited an island thats not in islands.json
+                }
+            }
+        }
+    }
+}
 
 export default {
     name: 'HomePage',
     data() {
-        // aggregate visit data
-        islands.forEach((island) => {
-            // do something
-        })
-        // format visit data
+        // always return combined data first
+        // convert totalData to array
 
-        // always return combined data
         return {
-            data: [
+            data: Object.values(totalData)
+        }
+    },
+    mounted() {
+        this.$eventBus.$on('user-selection', () => {
+            // read input || pass as parameter of text input
+            // change data
+            this.data = [
                 {
                     island: 'Island 0',
                     visits: 8,
                     fossils: 3,
                     bottles: 1,
                     players: 2
-                },
-                {
-                    island: 'Island 1',
-                    visits: 4,
-                    fossils: 1,
-                    bottles: 2,
-                    players: 1
-                },
-                {
-                    island: 'Island 2',
-                    visits: 14,
-                    fossils: 1,
-                    bottles: 3,
-                    players: 4
                 }
             ]
-        }
-    },
-    mounted() {
-        this.$eventBus.$on('user-selection', () => {
-            // this.data = [
-            //     {
-            //         island: 'Island 0',
-            //         visits: 8,
-            //         fossils: 3,
-            //         bottles: 1,
-            //         players: 2
-            //     }
-            // ]
         })
     }
 }

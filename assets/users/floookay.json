@@ -1,0 +1,134 @@
+{
+    "lambda pond": {
+        "visits": 8,
+        "fossils": 3,
+        "bottles": 1,
+        "fruits": ["peaches"],
+        "flowers": [
+            {
+                "type": "tulips",
+                "color": "normal"
+            },
+            {
+                "type": "pansies",
+                "color": "normal"
+            }
+        ]
+    },
+    "tarantula island": {
+        "visits": 2,
+        "fossils": 0,
+        "bottles": 0,
+        "fruits": ["peaches"],
+        "flowers": [
+            {
+                "type": "tulips",
+                "color": "normal"
+            }
+        ]
+    },
+    "bamboo island": {
+        "visits": 4,
+        "fossils": 2,
+        "bottles": 0,
+        "fruits": [],
+        "flowers": [
+            {
+                "type": "tulips",
+                "color": "normal"
+            }
+        ]
+    },
+    "waterfall": {
+        "visits": 7,
+        "fossils": 0,
+        "bottles": 1,
+        "fruits": ["cherries"],
+        "flowers": [
+            {
+                "type": "pansies",
+                "color": "normal"
+            }
+        ]
+    },
+    "fossil river": {
+        "visits": 4,
+        "fossils": 2,
+        "bottles": 0,
+        "fruits": ["peaches"],
+        "flowers": [
+            {
+                "type": "tulips",
+                "color": "normal"
+            }
+        ]
+    },
+    "large waterfall": {
+        "visits": 4,
+        "fossils": 2,
+        "bottles": 0,
+        "fruits": ["peaches"],
+        "flowers": [
+            {
+                "type": "pansies",
+                "color": "normal"
+            },
+            {
+                "type": "tulips",
+                "color": "normal"
+            }
+        ]
+    },
+    "mountain island": {
+        "visits": 1,
+        "fossils": 1,
+        "bottles": 0,
+        "fruits": ["peaches"],
+        "flowers": [
+            {
+                "type": "tulips",
+                "color": "normal"
+            }
+        ]
+    },
+    "waterfall with pond": {
+        "visits": 1,
+        "fossils": 1,
+        "bottles": 0,
+        "fruits": ["peaches"],
+        "flowers": [
+            {
+                "type": "tulips",
+                "color": "normal"
+            }
+        ]
+    },
+    "4x waterfall": {
+        "visits": 3,
+        "fossils": 1,
+        "bottles": 1,
+        "fruits": ["peaches"],
+        "flowers": [
+            {
+                "type": "tulips",
+                "color": "normal"
+            },
+            {
+                "type": "pansies",
+                "color": "normal"
+            }
+        ]
+    },
+    "special flower pond": {
+        "visits": 1,
+        "fossils": 0,
+        "bottles": 0,
+        "fruits": ["peaches"],
+        "flowers": [
+            {
+                "type": "tulips",
+                "color": "special"
+            }
+        ]
+    }
+}
