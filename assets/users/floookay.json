@@ -40,9 +40,9 @@
         ]
     },
     "waterfall": {
-        "visits": 7,
+        "visits": 8,
         "fossils": 0,
-        "bottles": 1,
+        "bottles": 2,
         "fruits": ["cherries"],
         "flowers": [
             {
@@ -52,9 +52,9 @@
         ]
     },
     "fossil river": {
-        "visits": 4,
+        "visits": 5,
         "fossils": 2,
-        "bottles": 0,
+        "bottles": 1,
         "fruits": ["peaches"],
         "flowers": [
             {
@@ -64,7 +64,7 @@
         ]
     },
     "large waterfall": {
-        "visits": 4,
+        "visits": 6,
         "fossils": 2,
         "bottles": 0,
         "fruits": ["peaches"],
@@ -80,7 +80,7 @@
         ]
     },
     "mountain island": {
-        "visits": 1,
+        "visits": 2,
         "fossils": 1,
         "bottles": 0,
         "fruits": ["peaches"],
