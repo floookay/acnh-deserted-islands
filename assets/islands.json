@@ -88,5 +88,14 @@
             "type": "native",
             "color": "normal"
         }
+    },
+    {
+        "island": "special flower pond",
+        "pic": "special_flower_pond.jpg",
+        "fruits": "native",
+        "flowers": {
+            "type": "native",
+            "color": "special"
+        }
     }
 ]
