@@ -163,18 +163,19 @@ export default {
         }
     },
     mounted() {
-        this.$eventBus.$on('user-selection', () => {
-            // read input || pass as parameter of text input
-            // change data
-            this.data = [
-                {
-                    island: 'Island 0',
-                    visits: 8,
-                    fossils: 3,
-                    bottles: 1,
-                    players: 2
+        this.$eventBus.$on('user-selection', (selection) => {
+            const selectionData = userData[selection]
+            for (const islandName in selectionData) {
+                if (
+                    Object.prototype.hasOwnProperty.call(
+                        selectionData,
+                        islandName
+                    )
+                ) {
+                    selectionData[islandName].island = islandName
                 }
-            ]
+            }
+            this.data = Object.values(selectionData)
         })
     }
 }
