@@ -172,20 +172,25 @@ export default {
     },
     mounted() {
         this.$eventBus.$on('user-selection', (selection) => {
-            const selectionData = userData[selection].islands
-            for (const islandName in selectionData) {
-                if (
-                    Object.prototype.hasOwnProperty.call(
-                        selectionData,
-                        islandName
-                    )
-                ) {
-                    selectionData[islandName].visits > 0
-                        ? (selectionData[islandName].island = islandName)
-                        : delete selectionData[islandName]
+            if (Object.prototype.hasOwnProperty.call(userData, selection)) {
+                const selectionData = userData[selection].islands
+                for (const islandName in selectionData) {
+                    if (
+                        Object.prototype.hasOwnProperty.call(
+                            selectionData,
+                            islandName
+                        )
+                    ) {
+                        selectionData[islandName].visits > 0
+                            ? (selectionData[islandName].island = islandName)
+                            : delete selectionData[islandName]
+                    }
                 }
+                this.data = Object.values(selectionData)
+            } else {
+                // user unknown
+                this.data = Object.values(totalData)
             }
-            this.data = Object.values(selectionData)
         })
     }
 }
