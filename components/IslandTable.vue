@@ -184,7 +184,8 @@ function exportData(data, username) {
             data[islandName].info = {
                 img: islands[islandName].img,
                 fruits: islands[islandName].fruits,
-                flowers: ''
+                flowers: '',
+                notes: islands[islandName].notes
             }
             // change info to user specific info
             if (
