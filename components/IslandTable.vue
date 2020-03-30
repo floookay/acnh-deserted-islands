@@ -140,7 +140,10 @@ for (const user in userData) {
     if (Object.prototype.hasOwnProperty.call(userData, user)) {
         const userIslands = userData[user].islands
         for (const islandName in userIslands) {
-            if (Object.prototype.hasOwnProperty.call(userIslands, islandName)) {
+            if (
+                Object.prototype.hasOwnProperty.call(userIslands, islandName) &&
+                userIslands[islandName].visits > 0
+            ) {
                 const island = userIslands[islandName]
                 if (
                     Object.prototype.hasOwnProperty.call(totalData, islandName)
@@ -177,7 +180,9 @@ export default {
                         islandName
                     )
                 ) {
-                    selectionData[islandName].island = islandName
+                    selectionData[islandName].visits > 0
+                        ? (selectionData[islandName].island = islandName)
+                        : delete selectionData[islandName]
                 }
             }
             this.data = Object.values(selectionData)
