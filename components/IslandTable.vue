@@ -79,9 +79,12 @@
             <template slot="detail" slot-scope="props">
                 <article class="media">
                     <figure class="media-left">
-                        <p class="image is-256x256">
+                        <p class="image is-128x128">
                             <img
-                                src="https://buefy.org/static/img/placeholder-128x128.png"
+                                :src="
+                                    '/acnh-deserted-islands/islands/x256/' +
+                                        props.row.info.img
+                                "
                             />
                         </p>
                     </figure>
@@ -89,9 +92,16 @@
                         <div class="content">
                             <p>
                                 <strong>{{ props.row.island }}</strong>
-                                <small>what kind of fruits/flowers etc.</small>
+                                <small>
+                                    {{
+                                        'fruits: ' +
+                                            props.row.info.fruits +
+                                            ' | flowers: ' +
+                                            props.row.info.flowers
+                                    }}
+                                </small>
                                 <br />
-                                Short notes about the island, maybe specialties
+                                {{ props.row.info.notes }}
                             </p>
                         </div>
                     </div>
@@ -160,6 +170,72 @@ for (const user in userData) {
     }
 }
 
+/**
+ * Adds general island info and formats the incoming visit data for the island table
+ * @param data object with island names as keys
+ * @param username for user-specific island info
+ * @returns the enriched and formatted data array
+ */
+function exportData(data, username) {
+    // TODO to refactor, bloated function
+    for (const islandName in data) {
+        if (Object.prototype.hasOwnProperty.call(data, islandName)) {
+            // TODO that the island is in islands should get checked by a test script
+            data[islandName].info = {
+                img: islands[islandName].img,
+                fruits: islands[islandName].fruits,
+                flowers: ''
+            }
+            // change info to user specific info
+            if (
+                username !== undefined &&
+                Object.prototype.hasOwnProperty.call(userData, username)
+            ) {
+                switch (islands[islandName].fruits) {
+                    case 'native':
+                        data[islandName].info.fruits =
+                            userData[username].fruits[0]
+                        break
+                    case 'secondary':
+                        data[islandName].info.fruits =
+                            userData[username].fruits[1]
+                        break
+                    case 'none':
+                    default:
+                        data[islandName].info.fruits = 'none'
+                        break
+                }
+                data[islandName].info.flowers = ''
+                Array(...islands[islandName].flowers).forEach(
+                    (flower, index) => {
+                        data[islandName].info.flowers += index > 0 ? ', ' : ''
+                        switch (flower) {
+                            case 'native':
+                                data[islandName].info.flowers +=
+                                    userData[username].flowers[0]
+                                break
+                            case 'secondary':
+                                data[islandName].info.flowers +=
+                                    userData[username].flowers[1]
+                                break
+                            default:
+                                data[islandName].info.flowers = 'none'
+                                break
+                        }
+                    }
+                )
+            } else {
+                // convert flower array to string
+                data[islandName].info.flowers = islands[
+                    islandName
+                ].flowers.toString()
+            }
+        }
+    }
+
+    return Object.values(data)
+}
+
 export default {
     name: 'HomePage',
     data() {
@@ -167,7 +243,7 @@ export default {
         // convert totalData to array
 
         return {
-            data: Object.values(totalData)
+            data: exportData(totalData)
         }
     },
     mounted() {
@@ -186,10 +262,10 @@ export default {
                             : delete selectionData[islandName]
                     }
                 }
-                this.data = Object.values(selectionData)
+                this.data = exportData(selectionData, selection)
             } else {
                 // user unknown
-                this.data = Object.values(totalData)
+                this.data = exportData(totalData)
             }
         })
     }
