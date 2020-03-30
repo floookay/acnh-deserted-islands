@@ -1,101 +1,78 @@
-[
-    {
-        "island": "tarantula island",
-        "pic": "tarantula.jpg",
+{
+    "Normal Island": {
+        "pic": "normal.png",
         "fruits": "native",
-        "flowers": {
-            "type": "native",
-            "color": "normal"
-        }
+        "flowers": ["native", "secondary"]
     },
-    {
-        "island": "bamboo island",
-        "pic": "bamboo.jpg",
-        "fruits": "foreign",
-        "flowers": {
-            "type": "native",
-            "color": "normal"
-        }
-    },
-    {
-        "island": "lambda pond",
-        "pic": "tarantula.jpg",
+    "Normal Pond Island": {
+        "pic": "normal_pond.png",
         "fruits": "native",
-        "flowers": {
-            "type": "native",
-            "color": "normal"
-        }
+        "flowers": ["native"]
     },
-    {
-        "island": "waterfall flood",
-        "pic": "4x_waterfall.jpg",
+    "Fruit Island": {
+        "pic": "fruit.png",
+        "fruits": "secondary",
+        "flowers": ["secondary"]
+    },
+    "Spiral Island": {
+        "pic": "spiral.png",
         "fruits": "native",
-        "flowers": {
-            "type": "native",
-            "color": "normal"
-        }
+        "flowers": ["native"]
     },
-    {
-        "island": "waterfall left",
-        "pic": "leftwaterfall.jpg",
-        "fruits": "foreign",
-        "flowers": {
-            "type": "foreign",
-            "color": "normal"
-        }
-    },
-    {
-        "island": "fossil river",
-        "pic": "fossil_river.jpg",
+    "Mountain Island": {
+        "pic": "mountain.png",
         "fruits": "native",
-        "flowers": {
-            "type": "native",
-            "color": "normal"
-        }
+        "flowers": ["native"]
     },
-    {
-        "island": "large waterfall",
-        "pic": "large waterfall.jpg",
+    "Pond Island": {
+        "pic": "pond.png",
         "fruits": "native",
-        "flowers": {
-            "type": "foreign",
-            "color": "normal"
-        }
+        "flowers": ["native", "secondary"]
     },
-    {
-        "island": "mountain island",
-        "pic": "4xwaterfall.jpg",
+    "Big Fish Island": {
+        "pic": "big_fish.png",
         "fruits": "native",
-        "flowers": {
-            "type": "native",
-            "color": "normal"
-        }
+        "flowers": ["native"]
     },
-    {
-        "island": "waterfall pond",
-        "pic": "waterfall_pond.jpg",
-        "fruits": "native",
-        "flowers": {
-            "type": "native",
-            "color": "normal"
-        }
+    "Bamboo Island": {
+        "pic": "bamboo.png",
+        "fruits": "bamboo",
+        "flowers": ["native"]
     },
-    {
-        "island": "trash pond",
-        "pic": "trash_pond.jpg",
+    "Bells Island": {
+        "pic": "bells.png",
         "fruits": "native",
-        "flowers": {
-            "type": "native",
-            "color": "normal"
-        }
+        "flowers": ["native"]
     },
-    {
-        "island": "special flower pond",
-        "pic": "special_flower_pond.jpg",
+    "Waterfalls Island": {
+        "pic": "waterfalls.png",
         "fruits": "native",
-        "flowers": {
-            "type": "native",
-            "color": "special"
-        }
+        "flowers": ["native", "secondary"]
+    },
+    "Flower Island": {
+        "pic": "flower.png",
+        "fruits": "none",
+        "flowers": ["native", "secondary"]
+    },
+    "Tarantula Island": {
+        "pic": "tarantula.png",
+        "fruits": "native",
+        "flowers": ["native"]
+    },
+    "Shark Island": {
+        "pic": "shark.png",
+        "fruits": "none",
+        "flowers": ["native"],
+        "notes": "only fish with fins"
+    },
+    "Scorpion Island": {
+        "pic": "scorpion.png",
+        "fruits": "native",
+        "flowers": ["native"]
+    },
+    "Trash Island": {
+        "pic": "trash.png",
+        "fruits": "native",
+        "flowers": ["native"]
     }
-]
+}

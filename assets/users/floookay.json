@@ -1,134 +1,81 @@
 {
-    "lambda pond": {
-        "visits": 8,
-        "fossils": 3,
-        "bottles": 1,
-        "fruits": ["peaches"],
-        "flowers": [
-            {
-                "type": "tulips",
-                "color": "normal"
-            },
-            {
-                "type": "pansies",
-                "color": "normal"
-            }
-        ]
-    },
-    "tarantula island": {
-        "visits": 2,
-        "fossils": 0,
-        "bottles": 0,
-        "fruits": ["peaches"],
-        "flowers": [
-            {
-                "type": "tulips",
-                "color": "normal"
-            }
-        ]
-    },
-    "bamboo island": {
-        "visits": 4,
-        "fossils": 2,
-        "bottles": 0,
-        "fruits": [],
-        "flowers": [
-            {
-                "type": "tulips",
-                "color": "normal"
-            }
-        ]
-    },
-    "waterfall": {
-        "visits": 8,
-        "fossils": 0,
-        "bottles": 2,
-        "fruits": ["cherries"],
-        "flowers": [
-            {
-                "type": "pansies",
-                "color": "normal"
-            }
-        ]
-    },
-    "fossil river": {
-        "visits": 5,
-        "fossils": 2,
-        "bottles": 1,
-        "fruits": ["peaches"],
-        "flowers": [
-            {
-                "type": "tulips",
-                "color": "normal"
-            }
-        ]
-    },
-    "large waterfall": {
-        "visits": 6,
-        "fossils": 2,
-        "bottles": 0,
-        "fruits": ["peaches"],
-        "flowers": [
-            {
-                "type": "pansies",
-                "color": "normal"
-            },
-            {
-                "type": "tulips",
-                "color": "normal"
-            }
-        ]
-    },
-    "mountain island": {
-        "visits": 2,
-        "fossils": 1,
-        "bottles": 0,
-        "fruits": ["peaches"],
-        "flowers": [
-            {
-                "type": "tulips",
-                "color": "normal"
-            }
-        ]
-    },
-    "waterfall with pond": {
-        "visits": 1,
-        "fossils": 1,
-        "bottles": 0,
-        "fruits": ["peaches"],
-        "flowers": [
-            {
-                "type": "tulips",
-                "color": "normal"
-            }
-        ]
-    },
-    "4x waterfall": {
-        "visits": 3,
-        "fossils": 1,
-        "bottles": 1,
-        "fruits": ["peaches"],
-        "flowers": [
-            {
-                "type": "tulips",
-                "color": "normal"
-            },
-            {
-                "type": "pansies",
-                "color": "normal"
-            }
-        ]
-    },
-    "special flower pond": {
-        "visits": 1,
-        "fossils": 0,
-        "bottles": 0,
-        "fruits": ["peaches"],
-        "flowers": [
-            {
-                "type": "tulips",
-                "color": "special"
-            }
-        ]
+    "fruits": ["peaches", "cherries"],
+    "flowers": ["tulips", "pansies"],
+    "islands": {
+        "Normal Island": {
+            "visits": 6,
+            "fossils": 2,
+            "bottles": 0
+        },
+        "Normal Pond Island": {
+            "visits": 1,
+            "fossils": 1,
+            "bottles": 0
+        },
+        "Fruit Island": {
+            "visits": 10,
+            "fossils": 0,
+            "bottles": 2
+        },
+        "Spiral Island": {
+            "visits": 5,
+            "fossils": 2,
+            "bottles": 1
+        },
+        "Mountain Island": {
+            "visits": 3,
+            "fossils": 2,
+            "bottles": 0
+        },
+        "Pond Island": {
+            "visits": 8,
+            "fossils": 3,
+            "bottles": 1
+        },
+        "Big Fish Island": {
+            "visits": 0,
+            "fossils": 0,
+            "bottles": 0
+        },
+        "Bamboo Island": {
+            "visits": 4,
+            "fossils": 2,
+            "bottles": 0
+        },
+        "Bells Island": {
+            "visits": 0,
+            "fossils": 0,
+            "bottles": 0
+        },
+        "Waterfalls Island": {
+            "visits": 3,
+            "fossils": 1,
+            "bottles": 1
+        },
+        "Flower Island": {
+            "visits": 2,
+            "fossils": 0,
+            "bottles": 0
+        },
+        "Tarantula Island": {
+            "visits": 2,
+            "fossils": 0,
+            "bottles": 0
+        },
+        "Shark Island": {
+            "visits": 0,
+            "fossils": 0,
+            "bottles": 0
+        },
+        "Scorpion Island": {
+            "visits": 0,
+            "fossils": 0,
+            "bottles": 0
+        },
+        "Trash Island": {
+            "visits": 0,
+            "fossils": 0,
+            "bottles": 0
+        }
     }
 }

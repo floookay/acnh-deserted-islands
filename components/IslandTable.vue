@@ -122,18 +122,23 @@ requireComponent.keys().forEach((fileName) => {
 })
 
 // prepare totalData with islands
-islands.forEach((island) => {
-    island.visits = 0
-    island.fossils = 0
-    island.bottles = 0
-    island.users = 0
-    totalData[island.island] = island
-})
+for (const islandName in islands) {
+    if (Object.prototype.hasOwnProperty.call(islands, islandName)) {
+        const island = {
+            island: islandName,
+            visits: 0,
+            fossils: 0,
+            bottles: 0,
+            users: 0
+        }
+        totalData[islandName] = island
+    }
+}
 
 // populate totalData
 for (const user in userData) {
     if (Object.prototype.hasOwnProperty.call(userData, user)) {
-        const userIslands = userData[user]
+        const userIslands = userData[user].islands
         for (const islandName in userIslands) {
             if (Object.prototype.hasOwnProperty.call(userIslands, islandName)) {
                 const island = userIslands[islandName]
@@ -164,7 +169,7 @@ export default {
     },
     mounted() {
         this.$eventBus.$on('user-selection', (selection) => {
-            const selectionData = userData[selection]
+            const selectionData = userData[selection].islands
             for (const islandName in selectionData) {
                 if (
                     Object.prototype.hasOwnProperty.call(
