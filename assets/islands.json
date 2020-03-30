@@ -1,78 +1,92 @@
 {
     "Normal Island": {
-        "pic": "normal.png",
+        "img": "normal.jpg",
         "fruits": "native",
-        "flowers": ["native", "secondary"]
+        "flowers": ["native", "secondary"],
+        "notes": "This island has no particular characteristics."
     },
     "Normal Pond Island": {
-        "pic": "normal_pond.png",
+        "img": "normal_pond.jpg",
         "fruits": "native",
-        "flowers": ["native"]
+        "flowers": ["native"],
+        "notes": "This island has no particular characteristics."
     },
     "Fruit Island": {
-        "pic": "fruit.png",
+        "img": "fruit.jpg",
         "fruits": "secondary",
-        "flowers": ["secondary"]
+        "flowers": ["secondary"],
+        "notes": "This island is full of trees of your secondary fruit."
     },
     "Spiral Island": {
-        "pic": "spiral.png",
+        "img": "spiral.jpg",
         "fruits": "native",
-        "flowers": ["native"]
+        "flowers": ["native"],
+        "notes": "This islands river is shaped like the swirl on a fossil. There is also a chance that a special fossil can be found in the center."
     },
     "Mountain Island": {
-        "pic": "mountain.png",
+        "img": "mountain.jpg",
         "fruits": "native",
-        "flowers": ["native"]
+        "flowers": ["native"],
+        "notes": "This island has no river and a mountain with 5 rocks on top. You can spawn infinite centipedes from the rocks if you hit them with a shovel."
     },
     "Pond Island": {
-        "pic": "pond.png",
+        "img": "pond.jpg",
         "fruits": "native",
-        "flowers": ["native", "secondary"]
+        "flowers": ["native", "secondary"],
+        "notes": "This island has a big pond in the middle."
     },
     "Big Fish Island": {
-        "pic": "big_fish.png",
+        "img": "big_fish.jpg",
         "fruits": "native",
-        "flowers": ["native"]
+        "flowers": ["native"],
+        "notes": "This island has a big lake in the middle and hybrid flowers around it. Only fishes of size 4 or bigger will spawn on this island."
     },
     "Bamboo Island": {
-        "pic": "bamboo.png",
-        "fruits": "bamboo",
-        "flowers": ["native"]
-    },
-    "Bells Island": {
-        "pic": "bells.png",
-        "fruits": "native",
-        "flowers": ["native"]
-    },
-    "Waterfalls Island": {
-        "pic": "waterfalls.png",
-        "fruits": "native",
-        "flowers": ["native", "secondary"]
-    },
-    "Flower Island": {
-        "pic": "flower.png",
-        "fruits": "none",
-        "flowers": ["native", "secondary"]
-    },
-    "Tarantula Island": {
-        "pic": "tarantula.png",
-        "fruits": "native",
-        "flowers": ["native"]
-    },
-    "Shark Island": {
-        "pic": "shark.png",
+        "img": "bamboo.jpg",
         "fruits": "none",
         "flowers": ["native"],
-        "notes": "only fish with fins"
+        "notes": "This island only has bamboo trees and flowers."
+    },
+    "Bells Island": {
+        "img": "bells.jpg",
+        "fruits": "native",
+        "flowers": ["native"],
+        "notes": "This island has another island in the middle. It is accessible by crushing the rock on the top. All rocks on the smaller island will drop bells."
+    },
+    "Waterfalls Island": {
+        "img": "waterfalls.jpg",
+        "fruits": "native",
+        "flowers": ["native", "secondary"],
+        "notes": "This island is has 4 waterfalls across 2 mountain levels."
+    },
+    "Flower Island": {
+        "img": "flower.jpg",
+        "fruits": "none",
+        "flowers": ["native", "secondary"],
+        "notes": "This island has a large pond in the middle and hybrid colored flowers around it."
+    },
+    "Tarantula Island": {
+        "img": "tarantula.jpg",
+        "fruits": "native",
+        "flowers": ["native"],
+        "notes": "This island has another island in the middle that you can access without a pole. Tarantulas will spawn infinitely in this area."
+    },
+    "Shark Island": {
+        "img": "shark.jpg",
+        "fruits": "none",
+        "flowers": ["native"],
+        "notes": "On this island only fish with fins will spawn."
     },
     "Scorpion Island": {
-        "pic": "scorpion.png",
+        "img": "scorpion.jpg",
         "fruits": "native",
-        "flowers": ["native"]
+        "flowers": ["native"],
+        "notes": "On this island only scorpions will spawn."
     },
     "Trash Island": {
-        "pic": "trash.png",
+        "img": "trash.jpg",
         "fruits": "native",
-        "flowers": ["native"]
+        "flowers": ["native"],
+        "notes": "On this island every fish will be either a tire, a boot or a can."
     }
 }
