@@ -35,11 +35,17 @@
         "flowers": ["native", "secondary"],
         "notes": "This island has a big pond in the middle."
     },
+    "Big Fish Flower Island": {
+        "img": "big_fish_flower.jpg",
+        "fruits": "native",
+        "flowers": ["native"],
+        "notes": "This island has a big lake in the middle and hybrid flowers around it. Only fishes of size 4 or bigger will spawn on this island."
+    },
     "Big Fish Island": {
         "img": "big_fish.jpg",
         "fruits": "native",
         "flowers": ["native"],
-        "notes": "This island has a big lake in the middle and hybrid flowers around it. Only fishes of size 4 or bigger will spawn on this island."
+        "notes": "This island has a smaller isle within. Only fishes of size 4 or bigger will spawn on this island."
     },
     "Bamboo Island": {
         "img": "bamboo.jpg",

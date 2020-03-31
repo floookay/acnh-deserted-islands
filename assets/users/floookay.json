@@ -8,9 +8,9 @@
             "bottles": 0
         },
         "Normal Pond Island": {
-            "visits": 1,
-            "fossils": 1,
-            "bottles": 0
+            "visits": 2,
+            "fossils": 2,
+            "bottles": 1
         },
         "Fruit Island": {
             "visits": 10,
@@ -28,9 +28,14 @@
             "bottles": 0
         },
         "Pond Island": {
-            "visits": 8,
+            "visits": 9,
             "fossils": 3,
             "bottles": 1
+        },
+        "Big Fish Flower Island": {
+            "visits": 0,
+            "fossils": 0,
+            "bottles": 0
         },
         "Big Fish Island": {
             "visits": 0,
@@ -38,7 +43,7 @@
             "bottles": 0
         },
         "Bamboo Island": {
-            "visits": 4,
+            "visits": 5,
             "fossils": 2,
             "bottles": 0
         },
