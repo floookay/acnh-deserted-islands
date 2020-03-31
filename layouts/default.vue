@@ -2,20 +2,15 @@
     <div>
         <nav
             class="navbar header has-shadow is-primary"
+            transparent
             role="navigation"
             aria-label="main navigation"
         >
-            <!--<div class="navbar-brand">
-        <a class="navbar-item" href="/">
-          <img src="~assets/buefy.png" alt="Buefy" height="28" />
-        </a>
-
-        <div class="navbar-burger">
-          <span />
-          <span />
-          <span />
-        </div>
-      </div>-->
+            <div
+                class="pageTitle has-text-weight-bold is-size-3 has-text-centered"
+            >
+                ACNH Deserted Island Tracker
+            </div>
         </nav>
 
         <section class="main-content columns">
@@ -26,7 +21,8 @@
                 <ul class="menu-list">
                     <li v-for="(item, key) of items" :key="key">
                         <nuxt-link :to="item.to" exact-active-class="is-active">
-                            <b-icon :icon="item.icon" /> {{ item.title }}
+                            <b-icon pack="mdi" :icon="item.icon" />
+                            {{ item.title }}
                         </nuxt-link>
                     </li>
                 </ul>
@@ -38,7 +34,11 @@
         </section>
     </div>
 </template>
-
+<style scoped>
+.pageTitle {
+    width: 100%;
+}
+</style>
 <script>
 export default {
     data() {
@@ -46,12 +46,12 @@ export default {
             items: [
                 {
                     title: 'Statistics',
-                    icon: 'ferry',
+                    icon: 'table',
                     to: { name: 'index' }
                 },
                 {
                     title: 'Islands',
-                    icon: 'island',
+                    icon: 'ferry',
                     to: { name: 'islands' }
                 }
             ]

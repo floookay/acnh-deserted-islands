@@ -2,7 +2,7 @@
     <b-field>
         <div class="control">
             <b-switch @input="toggle">
-                Chances for Fossil &amp; Bottle
+                Chances for Fossils &amp; Bottles
             </b-switch>
         </div>
     </b-field>
