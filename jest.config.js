@@ -14,5 +14,5 @@ module.exports = {
         '<rootDir>/components/**/*.vue',
         '<rootDir>/pages/**/*.vue'
     ],
-    setupFiles: ['<rootDir>/.jest/register-context.js']
+    setupFiles: ['<rootDir>/assets/.jest/register-context.js']
 }
