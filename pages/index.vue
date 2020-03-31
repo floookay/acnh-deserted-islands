@@ -1,6 +1,14 @@
 <template>
     <section class="section">
-        <UserSelection />
+        <div class="columns">
+            <div class="column">
+                <TableToggle />
+            </div>
+            <div class="column">
+                <UserSelection />
+            </div>
+        </div>
+
         <IslandTable />
     </section>
 </template>
@@ -8,12 +16,14 @@
 <script>
 import IslandTable from '../components/IslandTable'
 import UserSelection from '../components/UserSelection'
+import TableToggle from '../components/TableToggle'
 
 export default {
-    name: 'HomePage',
+    name: 'Statistics',
     components: {
         IslandTable,
-        UserSelection
+        UserSelection,
+        TableToggle
     }
 }
 </script>

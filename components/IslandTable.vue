@@ -32,6 +32,7 @@
                 <b-table-column
                     field="fossils_per"
                     label="Fossils per Island"
+                    :visible="showColumns"
                     sortable
                 >
                     <div v-if="props.row.visits === 0">
@@ -53,6 +54,7 @@
                 <b-table-column
                     field="bottles_per"
                     label="Bottles per Island"
+                    :visible="showColumns"
                     sortable
                 >
                     <div v-if="props.row.visits === 0">
@@ -238,13 +240,11 @@ function exportData(data, username) {
 }
 
 export default {
-    name: 'HomePage',
+    name: 'IslandTable',
     data() {
-        // always return combined data first
-        // convert totalData to array
-
         return {
-            data: exportData(totalData)
+            data: exportData(totalData),
+            showColumns: false
         }
     },
     mounted() {
@@ -268,6 +268,9 @@ export default {
                 // user unknown
                 this.data = exportData(totalData)
             }
+        })
+        this.$eventBus.$on('toggle-columns', (state) => {
+            this.showColumns = state
         })
     }
 }

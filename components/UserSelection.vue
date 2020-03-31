@@ -2,6 +2,8 @@
     <b-field label="Select specific user">
         <b-autocomplete
             placeholder="username"
+            icon="account"
+            clearable
             open-on-focus
             :data="users"
             @select="selected"
