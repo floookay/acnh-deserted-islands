@@ -8,7 +8,6 @@
                             '/acnh-deserted-islands/islands/x512/' +
                                 island[1].img
                         "
-                        alt="image of island cartography"
                     />
                 </figure>
             </div>
