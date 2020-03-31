@@ -7,7 +7,7 @@ export default {
      ** Headers of the page
      */
     head: {
-        title: process.env.npm_package_name || '',
+        title: 'ACNH Deserted Island Tracker',
         meta: [
             { charset: 'utf-8' },
             {
