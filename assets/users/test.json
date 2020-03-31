@@ -1,0 +1,86 @@
+{
+    "fruits": ["pears", "apples"],
+    "flowers": ["roses", "tulips"],
+    "islands": {
+        "Normal Island": {
+            "visits": 3,
+            "fossils": 0,
+            "bottles": 0
+        },
+        "Normal Pond Island": {
+            "visits": 6,
+            "fossils": 2,
+            "bottles": 3
+        },
+        "Fruit Island": {
+            "visits": 7,
+            "fossils": 1,
+            "bottles": 2
+        },
+        "Spiral Island": {
+            "visits": 4,
+            "fossils": 0,
+            "bottles": 0
+        },
+        "Mountain Island": {
+            "visits": 0,
+            "fossils": 0,
+            "bottles": 0
+        },
+        "Pond Island": {
+            "visits": 7,
+            "fossils": 0,
+            "bottles": 3
+        },
+        "Big Fish Flower Island": {
+            "visits": 10,
+            "fossils": 0,
+            "bottles": 0
+        },
+        "Big Fish Island": {
+            "visits": 0,
+            "fossils": 0,
+            "bottles": 0
+        },
+        "Bamboo Island": {
+            "visits": 4,
+            "fossils": 3,
+            "bottles": 0
+        },
+        "Bells Island": {
+            "visits": 1,
+            "fossils": 1,
+            "bottles": 0
+        },
+        "Waterfalls Island": {
+            "visits": 0,
+            "fossils": 0,
+            "bottles": 0
+        },
+        "Flower Island": {
+            "visits": 0,
+            "fossils": 0,
+            "bottles": 0
+        },
+        "Tarantula Island": {
+            "visits": 4,
+            "fossils": 1,
+            "bottles": 0
+        },
+        "Shark Island": {
+            "visits": 0,
+            "fossils": 0,
+            "bottles": 0
+        },
+        "Scorpion Island": {
+            "visits": 0,
+            "fossils": 0,
+            "bottles": 0
+        },
+        "Trash Island": {
+            "visits": 0,
+            "fossils": 0,
+            "bottles": 0
+        }
+    }
+}
