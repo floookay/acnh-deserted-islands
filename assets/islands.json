@@ -3,96 +3,112 @@
         "img": "normal.jpg",
         "fruits": "native",
         "flowers": ["native", "secondary"],
-        "notes": "This island has no particular characteristics."
+        "notes": "This island has no particular characteristics.",
+        "availability": { "northern": [3, 4], "southern": [3, 4] }
     },
     "Normal Pond Island": {
         "img": "normal_pond.jpg",
         "fruits": "native",
         "flowers": ["native"],
-        "notes": "This island has no particular characteristics."
+        "notes": "This island has no particular characteristics.",
+        "availability": { "northern": [3, 4], "southern": [3, 4] }
     },
     "Fruit Island": {
         "img": "fruit.jpg",
         "fruits": "secondary",
         "flowers": ["secondary"],
-        "notes": "This island is full of trees of your secondary fruit."
+        "notes": "This island is full of trees of your secondary fruit.",
+        "availability": { "northern": [3, 4], "southern": [3, 4] }
     },
     "Spiral Island": {
         "img": "spiral.jpg",
         "fruits": "native",
         "flowers": ["native"],
-        "notes": "This islands river is shaped like the swirl on a fossil. There is also a chance that a special fossil can be found in the center."
+        "notes": "This islands river is shaped like the swirl on a fossil. There is also a chance that a special fossil can be found in the center.",
+        "availability": { "northern": [3], "southern": [3] }
     },
     "Mountain Island": {
         "img": "mountain.jpg",
         "fruits": "native",
         "flowers": ["native"],
-        "notes": "This island has no river and a mountain with 5 rocks on top. You can spawn infinite centipedes from the rocks if you hit them with a shovel."
+        "notes": "This island has no river and a mountain with 5 rocks on top. You can spawn infinite centipedes from the rocks if you hit them with a shovel.",
+        "availability": { "northern": [3], "southern": [3] }
     },
     "Pond Island": {
         "img": "pond.jpg",
         "fruits": "native",
         "flowers": ["native", "secondary"],
-        "notes": "This island has a big pond in the middle."
+        "notes": "This island has a big pond in the middle.",
+        "availability": { "northern": [3], "southern": [3] }
     },
     "Big Fish Flower Island": {
         "img": "big_fish_flower.jpg",
         "fruits": "native",
         "flowers": ["native"],
-        "notes": "This island has a big lake in the middle and hybrid flowers around it. Only fishes of size 4 or bigger will spawn on this island."
+        "notes": "This island has a big lake in the middle and hybrid flowers around it. Only fishes of size 4 or bigger will spawn on this island.",
+        "availability": { "northern": [3], "southern": [3] }
     },
     "Big Fish Island": {
         "img": "big_fish.jpg",
         "fruits": "native",
         "flowers": ["native"],
-        "notes": "This island has a smaller isle within. Only fishes of size 4 or bigger will spawn on this island."
+        "notes": "This island has a smaller isle within. Only fishes of size 4 or bigger will spawn on this island.",
+        "availability": { "northern": [3], "southern": [3] }
     },
     "Bamboo Island": {
         "img": "bamboo.jpg",
         "fruits": "none",
         "flowers": ["native"],
-        "notes": "This island only has bamboo trees and flowers."
+        "notes": "This island only has bamboo trees and flowers.",
+        "availability": { "northern": [3], "southern": [] }
     },
     "Bells Island": {
         "img": "bells.jpg",
         "fruits": "native",
         "flowers": ["native"],
-        "notes": "This island has another island in the middle. It is accessible by crushing the rock on the top. All rocks on the smaller island will drop bells."
+        "notes": "This island has another island in the middle. It is accessible by crushing the rock on the top. All rocks on the smaller island will drop bells.",
+        "availability": { "northern": [3], "southern": [3] }
     },
     "Waterfalls Island": {
         "img": "waterfalls.jpg",
         "fruits": "native",
         "flowers": ["native", "secondary"],
-        "notes": "This island is has 4 waterfalls across 2 mountain levels."
+        "notes": "This island is has 4 waterfalls across 2 mountain levels.",
+        "availability": { "northern": [3], "southern": [3] }
     },
     "Flower Island": {
         "img": "flower.jpg",
         "fruits": "none",
         "flowers": ["native", "secondary"],
-        "notes": "This island has a large pond in the middle and hybrid colored flowers around it."
+        "notes": "This island has a large pond in the middle and hybrid colored flowers around it.",
+        "availability": { "northern": [3], "southern": [3] }
     },
     "Tarantula Island": {
         "img": "tarantula.jpg",
         "fruits": "native",
         "flowers": ["native"],
-        "notes": "This island has another island in the middle that you can access without a pole. Tarantulas will spawn infinitely in this area."
+        "notes": "This island has another island in the middle that you can access without a pole. Tarantulas will spawn infinitely in this area.",
+        "availability": { "northern": [3], "southern": [] }
     },
     "Shark Island": {
         "img": "shark.jpg",
         "fruits": "none",
         "flowers": ["native"],
-        "notes": "On this island only fish with fins will spawn."
+        "notes": "On this island only fish with fins will spawn.",
+        "availability": { "northern": [], "southern": [3] }
     },
     "Scorpion Island": {
         "img": "scorpion.jpg",
         "fruits": "native",
         "flowers": ["native"],
-        "notes": "On this island only scorpions will spawn."
+        "notes": "On this island only scorpions will spawn.",
+        "availability": { "northern": [], "southern": [3] }
     },
     "Trash Island": {
         "img": "trash.jpg",
         "fruits": "native",
         "flowers": ["native"],
-        "notes": "On this island every fish will be either a tire, a boot or a can."
+        "notes": "On this island every fish will be either a tire, a boot or a can.",
+        "availability": { "northern": [3], "southern": [3] }
     }
 }
