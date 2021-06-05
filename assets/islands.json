@@ -45,7 +45,7 @@
         "img": "big_fish.jpg",
         "fruits": "native",
         "flowers": ["native"],
-        "notes": "This island has a smaller isle within. Only fishes of size 4 or bigger will spawn on this island.",
+        "notes": "This island has a smaller isle within. Only fishes of size 4 or bigger will spawn on this island."
     },
     "Bamboo Island": {
         "img": "bamboo.jpg",
